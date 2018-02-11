@@ -27,7 +27,7 @@ public class URLBuilder {
     }
 
     public URL build() {
-        if (baseUrl == null || (host == null && protocol == null)) {
+        if (baseUrl == null && (host == null || protocol == null)) {
             throw new NullPointerException("URL build is missing params");
         }
         StringBuilder builder = new StringBuilder(Optional.ofNullable(baseUrl).orElseGet(this::composeParts));
