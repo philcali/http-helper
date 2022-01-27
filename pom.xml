@@ -32,11 +32,11 @@
   <distributionManagement>
     <snapshotRepository>
         <id>me.philcali.maven.snapshot</id>
-        <url>s3://personalmavenstack-personalmavenartifacts06add2dc-1rnh2cb3cp686/projects/snapshot</url>
+        <url>s3://philcali-artifact-repo/maven/snapshot</url>
     </snapshotRepository>
     <repository>
         <id>me.philcali.maven.release</id>
-        <url>s3://personalmavenstack-personalmavenartifacts06add2dc-1rnh2cb3cp686/projects/release</url>
+        <url>s3://philcali-artifact-repo/maven/release</url>
     </repository>
 </distributionManagement>
   
